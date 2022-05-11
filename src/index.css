@@ -41,3 +41,27 @@ nav {
   flex-direction: column;
   text-align: left;
 }
+
+.card {
+  width: 300px;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.cardstats {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  height: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
