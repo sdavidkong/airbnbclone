@@ -2,18 +2,20 @@ import React from "react"
 import weirdgoat from "./weirdgoat.png"
 import star from "./star.png"
 
-export default function Card() {
+export default function Card(props) {
+    console.log(props)
     return (
         <div className="card">
-            <img src={weirdgoat} className="card-img"></img>
+            <img src={props.img} className="card-img"></img>
             <div className="cardstats">
+                <span>{props.rating}</span>
                 <img src={star} className="star" />
-                <span>5.0</span>
-                <span>(6)</span>
-                <span> ~  Nepal </span>
+                <span>{props.reviewCount}</span>
+                <span> - 
+                {props.country}</span>
                 </div>
-                <p>Hug this weird goat </p>
-                <p><span className="bold">From $420 </span>/ person</p>
+                <p>{props.title}</p>
+                <p><span className="bold">From ${props.price} </span>/ person</p>
             
 
         </div>
